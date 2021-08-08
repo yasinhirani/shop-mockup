@@ -1,0 +1,33 @@
+.container-fluid {
+    padding: 2rem;
+}
+
+@each $color, $value in $theme-colors {
+    @include square-color($color, $value);
+}
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+.square-sm {
+    width: 40px;
+    height: 40px;
+}
+.square-md {
+    width: 48px;
+    height: 48px;
+}
+.square-lg {
+    width: 60px;
+    height: 60px;
+}
+.progress {
+    .progress-bar {
+        border-radius: $progress-bar-border-radius;
+    }
+}

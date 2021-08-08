@@ -1,0 +1,8 @@
+.btn-up{
+    color: $primary;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color: $primary;
+        color: white;
+    }
+}

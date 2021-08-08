@@ -1,0 +1,45 @@
+$font-family-base: "Roboto", sans-serif;
+$font-size-base: 1 * 0.875rem;
+
+$custom-border-radius: .25rem;
+$border-radius: .55rem;
+
+// Alerts
+$alert-border-radius: $custom-border-radius;
+
+// Buttons
+$btn-border-radius: .25rem;
+$btn-font-size: 14px;
+$btn-font-weight: 500;
+
+// Card
+// $card-border-width: 0;
+$card-border-radius: $custom-border-radius;
+
+// Dropdown
+// $dropdown-min-width: 9rem;
+// $dropdown-item-padding-y: 0.65rem;
+// $dropdown-item-padding-x: 0;
+// $dropdown-color: $dark;
+// $dropdown-link-hover-color:         $primary;
+// $dropdown-link-hover-bg:            transparent;
+// $dropdown-link-active-bg:          transparent;
+// $dropdown-link-active-color:          $primary;
+// $dropdown-border-radius: 0.55rem;
+// $dropdown-font-size: 14px;
+// $dropdown-padding-x: 1rem;
+// $dropdown-padding-y: 0;
+
+// Table
+$table-head-bg:               $secondary;
+$table-cell-padding:          1rem;
+$thead-border-radius:         0.45rem;
+
+// Progress
+$progress-height:   0.3rem;
+$progress-border-radius:      0.8rem;
+$progress-bar-border-radius:      0.8rem;
+$progress-bg:                  $secondary;
+
+//card
+$card-spacer-x: 2rem;

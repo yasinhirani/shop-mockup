@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shop Mockup</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper bg-white d-flex w-100 h-100 overflow-hidden">
+        <aside class="sidebar d-flex flex-column">
+            <figure class="mb-0 py-4 px-5">
+                <img src="./assets/images/navbar-brand.PNG" alt="">
+            </figure>
+            <nav class="flex-grow-1 overflow-vertical">
+                <ul class="nav flex-column">
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-th-large font-icon"></span><span class="nav-text pl-2">Dashboard</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-bar-chart font-icon"></span><span class="nav-text pl-2">Transaction</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-pie-chart font-icon"></span><span class="nav-text pl-2">Task</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center active" href=""><span class="fa fa-file font-icon"></span><span class="nav-text pl-2">Documents</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-shopping-bag font-icon"></span><span class="nav-text pl-2">Store</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-bell font-icon"></span><span class="nav-text pl-2">Notification</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-user font-icon"></span><span class="nav-text pl-2">Profile</span></a></li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center" href=""><span class="fa fa-cog font-icon"></span><span class="nav-text pl-2">Settings</span></a></li>
+                </ul>
+            </nav>
+            <figure class="py-3 px-4 mb-0">
+                <img src="./assets/images/thumps-up.PNG" alt="">
+            </figure>
+            <footer>
+                <button class="btn-logout btn btn-transparent d-flex align-items-center mx-4 my-3 text-gray-700"><span class="fa fa-sign-out font-icon"></span><span class="pl-3">Log Out</span></button>
+            </footer>
+        </aside>
+        <main class="flex-grow-1 bg-secondary">
+            <header class="p-4 d-flex align-items-center justify-content-between">
+                <h2 class="mb-0">Documents</h2>
+                <div class="d-flex flex-nowrap align-items-center">
+                    <div class="search-bar d-flex align-items-center bg-white p-1 rounded mr-3">
+                    <input type="search" name="search" id="search" placeholder="search">
+                    <label for="search" class="custom-search mb-0 bg-primary text-white rounded"><span class="fa fa-search"></span></label>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary bg-white rounded dropdown-toggle p-0 p-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <figure class="mb-0 d-inline mr-0 mr-md-2">
+                            <img class="rounded" src="./assets/images/avatar.PNG" alt="">
+                        </figure>  <span class="d-none d-md-inline">Angelina Joli</span> <span class="fa fa-angle-down px-0 px-md-2"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                </div>
+            </header>
+            <div class="main-content p-4">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <div class="bg-white">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nam?</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="bg-white">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nam?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

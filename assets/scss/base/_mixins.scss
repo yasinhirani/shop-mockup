@@ -1,0 +1,6 @@
+@mixin square-color($value,$color) {
+    .square-#{$value} {
+        color: $color;
+        background-color: rgba($color, 0.12);
+    }
+}

@@ -1,0 +1,11 @@
+.alert-bg-custom {
+    background-image: linear-gradient(to right, rgba($info, 0.8), $info);
+    .start-btn {
+        background-color: rgba($white, 0.28);
+        border: 0;
+        padding: 0.675rem 2rem;
+    }
+    .close {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,54 @@
+// .main-content{
+//     padding: 40px;
+// }
+.main-content-header{
+    padding: 40px;
+}
+.label-radio-1,.label-radio-2{
+    color: $gray-500;
+}
+.radios{
+    background-color: $gray-200;
+}
+.radio-1{
+    &:checked{
+        ~ .label-radio-1{
+            background-color: white;
+            color: $dark;
+            .fa{
+                color: $primary;
+            }
+        }
+    }
+}
+.radio-2{
+    &:checked{
+        ~ .label-radio-2{
+            background-color: white;
+            color: $dark;
+            .fa{
+                color: $primary;
+            }
+        }
+    }
+}
+#hamburger2{
+    &:checked{
+        ~.right-sidebar{
+            width: 0;
+            flex: 0 0 0;
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    #hamburger2{
+        &:checked{
+            ~.right-sidebar{
+                width: 250px;
+                flex: 0 0 250px;
+                right: 0;
+                z-index: 100;
+            }
+        }
+    }
+}

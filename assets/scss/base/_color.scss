@@ -1,0 +1,56 @@
+// Colors
+// $dark-blue: #2c538d;
+// $red: #db3634;
+// $green: #69c078;
+// $yellow: #e6a843;
+// $blue: #1e69dd;
+
+$gray-100:#f6f4fc;
+$gray-200:#b9b9b9;
+$gray-400: #979899;
+$gray-500: #76889b;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$dark:#2a292e;
+$light: #bebebe;
+$gray-custom: #eaecf4;
+// Theme colors
+$primary:   #2697ff;
+$secondary: #f4f4f7;
+$danger:    #ee2727;
+$warning:   #ffcf26;
+$success:   #26e5ff;
+// $light-green: #69daf0;
+// $info:      #4d70ff;
+
+$primary-light: lighten($primary,10%);
+$danger-light: lighten($danger,30%);
+$secondary-light: lighten($secondary,.8);
+// $success-light: lighten($success,20%);
+
+// Theme Map
+$theme-colors: ();
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "danger": $danger,
+    // "warning": $warning,
+    // "success": $success,
+    // 'light-green': $light-green,
+    'gray-500': $gray-500,
+    'gray-200': $gray-200,
+    'gray-100': $gray-100,
+    // "info": $info,
+    "gray-400": $gray-400,
+    "gray-600": $gray-600,
+    "gray-700": $gray-700,
+    "gray-800": $gray-800,
+    "gray-900": $gray-900,
+    "gray-custom": $gray-custom,
+    "primary-light": $primary-light,
+    "danger-light": $danger-light,
+    // "success-light": $success-light,
+);
+

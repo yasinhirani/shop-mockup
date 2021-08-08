@@ -1,0 +1,41 @@
+.custom-input-1{
+    &:checked{
+        ~ .custom-label-1{
+            background-color: $white;
+            border: 1px solid $secondary;
+            box-shadow: 8px 10px 21px -10px rgba(169,167,167,0.83);
+        }
+    }
+}
+.custom-input-2{
+    &:checked{
+        ~ .custom-label-2{
+            background-color: $white;
+            border: 1px solid $secondary;
+            box-shadow: 8px 10px 21px -10px rgba(169,167,167,0.83);
+        }
+    }
+}
+.custom-input-3{
+    &:checked{
+        ~ .custom-label-3{
+            background-color: $white;
+            border: 1px solid $secondary;
+            box-shadow: 8px 10px 21px -10px rgba(169,167,167,0.83);
+        }
+    }
+}
+.custom-input-4{
+    &:checked{
+        ~ .custom-label-4{
+            background-color: $white;
+            border: 1px solid $secondary;
+            box-shadow: 8px 10px 21px -10px rgba(169,167,167,0.83);
+        }
+    }
+}
+.custom-label-1, .custom-label-2,.custom-label-3,.custom-label-4{
+    background-color: $secondary;
+    color: $gray-500;
+    border: 1px solid transparent;
+}
