@@ -23,12 +23,13 @@ $danger:    #ee2727;
 $warning:   #ffcf26;
 $success:   #26e5ff;
 // $light-green: #69daf0;
-// $info:      #4d70ff;
+$info:      #13488a;
 
-$primary-light: lighten($primary,10%);
+$primary-light: lighten($primary,25%);
 $danger-light: lighten($danger,30%);
+$warning-light: lighten($warning,30%);
 $secondary-light: lighten($secondary,.8);
-// $success-light: lighten($success,20%);
+$info-light: lighten($info,50%);
 
 // Theme Map
 $theme-colors: ();
@@ -42,7 +43,7 @@ $theme-colors: (
     'gray-500': $gray-500,
     'gray-200': $gray-200,
     'gray-100': $gray-100,
-    // "info": $info,
+    "info": $info,
     "gray-400": $gray-400,
     "gray-600": $gray-600,
     "gray-700": $gray-700,
@@ -51,6 +52,7 @@ $theme-colors: (
     "gray-custom": $gray-custom,
     "primary-light": $primary-light,
     "danger-light": $danger-light,
-    // "success-light": $success-light,
+    "warning-light": $warning-light,
+    "info-light": $info-light,
 );
 

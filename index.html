@@ -10,9 +10,12 @@
 </head>
 <body>
     <div class="wrapper bg-white d-flex w-100 h-100 overflow-hidden">
-        <aside class="sidebar d-flex flex-column">
-            <figure class="mb-0 py-4 px-5">
+        <input type="checkbox" name="hamburger" id="hamburger">
+        <label for="hamburger" class="backdrop"></label>
+        <aside class="sidebar bg-white h-100 d-flex flex-column overflow-hidden">
+            <figure class="main-logo mb-0 py-4 px-5">
                 <img src="./assets/images/navbar-brand.PNG" alt="">
+                <label class="d-inline d-lg-none" for="hamburger"><span class="fa fa-times"></span></label>
             </figure>
             <nav class="flex-grow-1 overflow-vertical">
                 <ul class="nav flex-column">
@@ -30,12 +33,15 @@
                 <img src="./assets/images/thumps-up.PNG" alt="">
             </figure>
             <footer>
-                <button class="btn-logout btn btn-transparent d-flex align-items-center mx-4 my-3 text-gray-700"><span class="fa fa-sign-out font-icon"></span><span class="pl-3">Log Out</span></button>
+                <button class="btn-logout btn btn-transparent d-flex align-items-center mx-4 my-3 text-gray-700"><span class="fa fa-sign-out font-icon"></span><span class="pl-3">LogOut</span></button>
             </footer>
         </aside>
-        <main class="flex-grow-1 bg-secondary">
+        <main class="d-flex flex-column flex-grow-1 bg-secondary">
             <header class="p-4 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <label class="mb-0" for="hamburger"><span class="fa fa-bars mr-3"></span></label>
                 <h2 class="mb-0">Documents</h2>
+                </div>
                 <div class="d-flex flex-nowrap align-items-center">
                     <div class="search-bar d-flex align-items-center bg-white p-1 rounded mr-3">
                     <input type="search" name="search" id="search" placeholder="search">
@@ -55,16 +61,195 @@
                       </div>
                 </div>
             </header>
-            <div class="main-content p-4">
+            <div class="main-content p-3 p-md-4 overflow-vertical">
                 <div class="row">
-                    <div class="col-12 col-md-9">
-                        <div class="bg-white">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nam?</p>
+                    <div class="col-12 col-lg-9 mb-md-3">
+                        <header class="d-flex align-items-center justify-content-between">
+                            <h5 class="mb-0">My Files</h5>
+                            <button type="button" class="btn btn-primary rounded"><span class="fa fa-plus mr-2"></span><span class="font-weight-lighter">Add New</span></button>
+                        </header>
+                        <div class="row  py-4">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="bg-white p-3 rounded mb-3 mb-xl-0">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fa fa-file p-3 rounded bg-primary-light text-primary"></span>
+                                        <span class="fa fa-ellipsis-v"></span>
+                                    </div>
+                                    <h4 class="mb-0 py-4">Documents</h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar custom-progress w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0 font-xs text-gray-600 font-weight-normal">1,328 Files</p>
+                                        <p class="mb-0">1.3GB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="bg-white p-3 rounded mb-3 mb-xl-0">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fa fa-google p-3 rounded bg-warning-light text-warning"></span>
+                                        <span class="fa fa-ellipsis-v"></span>
+                                    </div>
+                                    <h4 class="mb-0 py-4">Google Drive</h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar custom-progress-2 w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0 font-xs text-gray-600 font-weight-normal">1,328 Files</p>
+                                        <p class="mb-0">1.3GB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="bg-white p-3 rounded mb-3 mb-xl-0">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fa fa-file p-3 rounded bg-info-light text-info"></span>
+                                        <span class="fa fa-ellipsis-v"></span>
+                                    </div>
+                                    <h4 class="mb-0 py-4">One Drive</h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar custom-progress-3 w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0 font-xs text-gray-600 font-weight-normal">1,328 Files</p>
+                                        <p class="mb-0">1.3GB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                <div class="bg-white p-3 rounded">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fa fa-dropbox p-3 rounded bg-primary-light text-primary"></span>
+                                        <span class="fa fa-ellipsis-v"></span>
+                                    </div>
+                                    <h4 class="mb-0 py-4">Dropbox</h4>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar custom-progress-4 w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0 font-xs text-gray-600 font-weight-normal">1,328 Files</p>
+                                        <p class="mb-0">1.3GB</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-7 mb-3 mb-md-0">
+                                <div class="bg-white p-3 rounded h-100">
+                                    <div class="d-flex align-items-center justify-content-between pb-2">
+                                        <p class="mb-0">Recent Order</p>
+                                        <button type="button" class="btn btn-transparent border">See more</button>
+                                    </div>
+                                    <div class="table-responsive">
+                                    <table class="table table-borderless table-striped">
+                                        <thead>
+                                          <tr class=" border-bottom border-gray-200">
+                                            <th scope="col" class="text-gray-500 font-weight-normal">First Name<span class="fa fa-caret-down ml-2"></span></th>
+                                            <th scope="col" class="text-gray-500 font-weight-normal">Date<span class="fa fa-caret-down ml-2"></span></th>
+                                            <th scope="col" class="text-gray-500 font-weight-normal">Size<span class="fa fa-caret-down ml-2"></span></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td><span class="fa fa-file p-2 bg-danger mr-3 text-white rounded"></span>Mark</td>
+                                            <td>Otto</td>
+                                            <td class="font-weight-bold">@mdo</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                                <div class="bg-white p-3 rounded h-100">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Analytics</p>
+                                        <span class="fa fa-ellipsis-h"></span>
+                                    </div>
+                                    <figure class="mb-0 pt-5 bar-diagram">
+                                        <img src="./assets/images/bar-diagram.PNG" alt="">
+                                    </figure>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="bg-white">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nam?</p>
+                    <div class="col-12 col-lg-3">
+                        <div class="bg-white p-3 rounded h-100">
+                            <h4 class="mb-0">Storage Details</h4>
+                            <figure class="mb-0 d-flex justify-content-center align-items-center py-4">
+                                <img src="./assets/images/pie-diagram.PNG" alt="">
+                            </figure>
+                            <div class="card rounded mb-4">
+                                <div class="card-body p-3 d-flex align-items-center">
+                                  <span class="fa fa-file text-primary font-xl mr-3"></span>
+                                      <div class="mr-auto">
+                                          <h6 class="">Document Files</h6>
+                                          <p class="mb-0 text-gray-600 font-xs">1,328</p>
+                                      </div>
+                                      <p class="mb-0">1.3GB</p>
+                                </div>
+                              </div>
+                            <div class="card rounded mb-4">
+                                <div class="card-body p-3 d-flex align-items-center">
+                                  <span class="fa fa-file text-primary font-xl mr-3"></span>
+                                      <div class="mr-auto">
+                                          <h6 class="">Document Files</h6>
+                                          <p class="mb-0 text-gray-600 font-xs">1,328</p>
+                                      </div>
+                                      <p class="mb-0">1.3GB</p>
+                                </div>
+                              </div>
+                            <div class="card rounded mb-4">
+                                <div class="card-body p-3 d-flex align-items-center">
+                                  <span class="fa fa-file text-primary font-xl mr-3"></span>
+                                      <div class="mr-auto">
+                                          <h6 class="">Document Files</h6>
+                                          <p class="mb-0 text-gray-600 font-xs">1,328</p>
+                                      </div>
+                                      <p class="mb-0">1.3GB</p>
+                                </div>
+                              </div>
+                            <div class="card rounded mb-4">
+                                <div class="card-body p-3 d-flex align-items-center">
+                                  <span class="fa fa-file text-primary font-xl mr-3"></span>
+                                      <div class="mr-auto">
+                                          <h6 class="">Document Files</h6>
+                                          <p class="mb-0 text-gray-600 font-xs">1,328</p>
+                                      </div>
+                                      <p class="mb-0">1.3GB</p>
+                                </div>
+                              </div>
                         </div>
                     </div>
                 </div>
