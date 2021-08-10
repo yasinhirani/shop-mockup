@@ -21,8 +21,8 @@
                 <img class="img-fluid" src="./assets/images/navbar-brand.PNG" alt="">
                 <label class="d-inline d-lg-none" for="hamburger"><span class="fa fa-times"></span></label>
             </figure>
-            <nav class="flex-grow-1 overflow-vertical">
-                <ul class="nav flex-column">
+            <nav class="d-flex flex-column flex-grow-1 overflow-vertical">
+                <ul class="nav flex-column mb-5">
                     <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center"
                             href=""><span class="fa fa-th-large font-icon"></span><span
                                 class="nav-text pl-2">Dashboard</span></a></li>
@@ -32,16 +32,9 @@
                     <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center"
                             href=""><span class="fa fa-pie-chart font-icon"></span><span
                                 class="nav-text pl-2">Task</span></a></li>
-                    <li class="nav-item mx-3 py-1">
-                        <a class="nav-link rounded p-0 d-flex align-items-center active" href="">
-                            <div class="py-2 px-2 d-flex justify-content-center align-items-center shadow">
-                                <span class="fa fa-file font-icon"></span>
-                            </div>
-                            <div class="py-2">
-                                <span class="nav-text pl-2">Documents</span>
-                            </div>
-                        </a>
-                    </li>
+                    <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center active"
+                            href=""><span class="fa fa-file font-icon"></span><span
+                                class="nav-text pl-2">Documents</span></a></li>
                     <li class="nav-item mx-3 py-1"><a class="nav-link rounded py-2 d-flex align-items-center"
                             href=""><span class="fa fa-shopping-bag font-icon"></span><span
                                 class="nav-text pl-2">Store</span></a></li>
@@ -55,17 +48,22 @@
                             href=""><span class="fa fa-cog font-icon"></span><span
                                 class="nav-text pl-2">Settings</span></a></li>
                 </ul>
+                <div class="bg-custom-primary pt-5 position-relative pb-3 mx-4 rounded px-3 mt-auto">
+                    <figure class="mb-0 img-fluid thumb">
+                        <img src="./assets/images/thumb.png" alt="">
+                    </figure>
+                    <p class="mb-0 py-3">Upgrade to <strong>pro</strong> for get all the features</p>
+                    <a class="pb-2" href="#">Upgrade Now <span class="fa fa-arrow-right pl-2"></span></a>
+                </div>
             </nav>
-            <figure class="py-3 px-4 mb-0">
-                <img src="./assets/images/thumps-up.PNG" alt="">
-            </figure>
             <footer>
-                <button class="btn-logout btn btn-transparent d-flex align-items-center mx-4 my-3 text-gray-700"><span
+                <button
+                    class="btn-logout btn btn-transparent d-flex align-items-center mx-4 my-3 text-gray-600 font-weight-medium"><span
                         class="fa fa-sign-out font-icon"></span><span class="pl-3">LogOut</span></button>
             </footer>
         </aside>
         <main class="d-flex flex-column flex-grow-1 bg-secondary overflow-hidden">
-            <header class="px-4 pt-3 pb-3 pb-mb-0 d-flex align-items-center justify-content-between">
+            <header class="px-4 pt-4 pb-3 pb-md-0 d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                     <label class="mb-0" for="hamburger"><span class="fa fa-bars mr-3"></span></label>
                     <h2 class="mb-0 d-none d-md-inline">Documents</h2>

@@ -13,24 +13,6 @@ body {
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 input[type=radio],
 input[type=checkbox] {
   display: none;
@@ -11112,6 +11094,12 @@ a.text-custom-warning:hover, a.text-custom-warning:focus {
     z-index: 100;
   }
 }
+.thumb {
+  position: absolute;
+  top: -76px;
+  left: 20px;
+}
+
 .backdrop {
   display: none;
   position: absolute;
