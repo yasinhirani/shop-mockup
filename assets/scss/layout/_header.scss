@@ -11,16 +11,24 @@
         padding: 0;
     }
 }
-.search-bar{
-    &:hover{
-        #search{
-            width: 250px;
-            padding: 10px;
+@include media-breakpoint-down(md){
+    .search-bar{
+        &:hover{
+            #search{
+                width: 160px;
+                padding: 10px;
+            }
+            .dropdown{
+                display: none;
+            }
         }
     }
 }
 .custom-search{
     padding: 10px 12px;
+}
+.btn-add{
+    padding: 12px 16px;
 }
 #hamburger {
     &:checked {

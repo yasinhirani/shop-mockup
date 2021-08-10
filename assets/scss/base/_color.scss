@@ -24,6 +24,9 @@ $warning:   #ffcf26;
 $success:   #26e5ff;
 // $light-green: #69daf0;
 $info:      #13488a;
+$custom-primary: #e9f5ff;
+$custom-warning: #fff6e7;
+$custom-info: #e7ecf3;
 
 $primary-light: lighten($primary,25%);
 $danger-light: lighten($danger,30%);
@@ -54,5 +57,8 @@ $theme-colors: (
     "danger-light": $danger-light,
     "warning-light": $warning-light,
     "info-light": $info-light,
+    "custom-info": $custom-info,
+    "custom-primary": $custom-primary,
+    "custom-warning": $custom-warning,
 );
 
